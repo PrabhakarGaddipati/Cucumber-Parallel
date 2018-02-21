@@ -113,7 +113,7 @@ public class SeMethods extends Reporter {
 				driver = new RemoteWebDriver(new URL("http://"+sHubUrl+":"+sHubPort+"/wd/hub"), dc);
 			else{ // this is for local run
 				if(browser.equalsIgnoreCase("chrome")){
-					System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+					//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 					driver = new ChromeDriver();
 				}else{
 					System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
